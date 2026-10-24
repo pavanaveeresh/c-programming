@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct list
+{
+    int data;
+    struct list*NODE;
+};
+NODE first=NULL;
+void insert_front()
+{
+    int elem;
+    NODE temp;
+    temp=(NODE)malloc(sizeof(struct list));
+    if(temp==NULL)
+    {
+        printf("Insufficient memory");
+        return ;
+    }
+    else
+    {
+        print("enter data");
+        scanf("%d",&elem);
+        temp->data=elem;
+        temp->link=frist;
+        frist=temp;
+    }
+}
